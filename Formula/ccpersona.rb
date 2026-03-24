@@ -5,21 +5,21 @@
 class Ccpersona < Formula
   desc "Claude Code Persona System - Automatically apply different personas to Claude Code sessions"
   homepage "https://github.com/daikw/ccpersona"
-  version "0.1.17"
+  version "0.1.18"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daikw/ccpersona/releases/download/v0.1.17/ccpersona_Darwin_x86_64.tar.gz"
-      sha256 "4e51244fd31f991e58735f8fe033cd9fe3460729037edf940ac3481d3808e2bb"
+      url "https://github.com/daikw/ccpersona/releases/download/v0.1.18/ccpersona_Darwin_x86_64.tar.gz"
+      sha256 "f94e790328c23493b90f61dcb1aabb3ba304a3d96dd1c5c8b2c541a0ac2ec84c"
 
       define_method(:install) do
         bin.install "ccpersona"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daikw/ccpersona/releases/download/v0.1.17/ccpersona_Darwin_arm64.tar.gz"
-      sha256 "3e336ccf0859f33aa6436ecd5f57146308c26f5937f5324a40c1335afe4b4dc8"
+      url "https://github.com/daikw/ccpersona/releases/download/v0.1.18/ccpersona_Darwin_arm64.tar.gz"
+      sha256 "06db5a1409d84814f41074b21c6a0ff4a233bb892c5651dc983aa424eb5ab5ac"
 
       define_method(:install) do
         bin.install "ccpersona"
@@ -29,22 +29,22 @@ class Ccpersona < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daikw/ccpersona/releases/download/v0.1.17/ccpersona_Linux_x86_64.tar.gz"
-      sha256 "2e73b75af83190feb0964abf5e7e9f27560d36d239b99d8e1d3eb9715e063e3f"
+      url "https://github.com/daikw/ccpersona/releases/download/v0.1.18/ccpersona_Linux_x86_64.tar.gz"
+      sha256 "14c59d71033ca5543cbf21591b9ea721c4c391183f7e39d025552f2ee864ca0e"
       define_method(:install) do
         bin.install "ccpersona"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/daikw/ccpersona/releases/download/v0.1.17/ccpersona_Linux_armv6.tar.gz"
-      sha256 "4671fc60e9629ed6a948347ad1f5052163881ef987bec64788c37db5ab903152"
+      url "https://github.com/daikw/ccpersona/releases/download/v0.1.18/ccpersona_Linux_armv6.tar.gz"
+      sha256 "c90e40445f898fc0165418ee4c7c8d4f159deee1d45b57ee67b7b052f8ac2ffa"
       define_method(:install) do
         bin.install "ccpersona"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daikw/ccpersona/releases/download/v0.1.17/ccpersona_Linux_arm64.tar.gz"
-      sha256 "ca9ffb547f2b1f2ee783678b8ac5c1d9f013bd5f34148be9b63795a6a97235df"
+      url "https://github.com/daikw/ccpersona/releases/download/v0.1.18/ccpersona_Linux_arm64.tar.gz"
+      sha256 "d316a4fe36ced6b8e64cc20a717968836fc7a3487ca365daac274dcfd1c06541"
       define_method(:install) do
         bin.install "ccpersona"
       end
