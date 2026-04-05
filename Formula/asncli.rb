@@ -5,21 +5,21 @@
 class Asncli < Formula
   desc "Asana CLI - human-readable output by default, JSON for automation"
   homepage "https://github.com/daikw/asncli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daikw/asncli/releases/download/v0.1.0/asncli_Darwin_x86_64.tar.gz"
-      sha256 "5ca45e21fa8a808342b9774203cb17c8f88f4b7837c911384b9a8d0c079925b2"
+      url "https://github.com/daikw/asncli/releases/download/v0.2.0/asncli_Darwin_x86_64.tar.gz"
+      sha256 "9fc73f49a6bd149802e08ac32de8ed1860fd43fae485e2e6d3157d5fa1c2ab9a"
 
       define_method(:install) do
         bin.install "asn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daikw/asncli/releases/download/v0.1.0/asncli_Darwin_arm64.tar.gz"
-      sha256 "c7ff7babbe834c75cd7d5e2bef66f91b41918978bd0bfa917e87e2948461157a"
+      url "https://github.com/daikw/asncli/releases/download/v0.2.0/asncli_Darwin_arm64.tar.gz"
+      sha256 "26af81586ff0b668f0e6a30cb73ab73102bbb8d1dee1fe36b5fec11b4ad2c8de"
 
       define_method(:install) do
         bin.install "asn"
@@ -29,22 +29,22 @@ class Asncli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daikw/asncli/releases/download/v0.1.0/asncli_Linux_x86_64.tar.gz"
-      sha256 "6c47526f0a58540eb09590cfc40d070c279ddb555832764f2fc93609f1e8ec2a"
+      url "https://github.com/daikw/asncli/releases/download/v0.2.0/asncli_Linux_x86_64.tar.gz"
+      sha256 "b5f8ac352c96a6f6e70f026bdd6e90015b0bb546015b7c5ab88be5683a322ce2"
       define_method(:install) do
         bin.install "asn"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/daikw/asncli/releases/download/v0.1.0/asncli_Linux_armv6.tar.gz"
-      sha256 "d0f86124ba71f2981c9ce5a80ae69cddb6f046fd60c149eecbba3a103f260f6f"
+      url "https://github.com/daikw/asncli/releases/download/v0.2.0/asncli_Linux_armv6.tar.gz"
+      sha256 "66e7b9f4b8b327a242d5e36400c3f4501a9b04a494c10ad542ed82777fc88f6f"
       define_method(:install) do
         bin.install "asn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daikw/asncli/releases/download/v0.1.0/asncli_Linux_arm64.tar.gz"
-      sha256 "5bbf9e5b120424d456d1484f3891fa9d74645ca97a02ce0b0012356728c1a8aa"
+      url "https://github.com/daikw/asncli/releases/download/v0.2.0/asncli_Linux_arm64.tar.gz"
+      sha256 "5a08b473081954c31d5fa6a6a01d39615ebc5e8dd2c786ec0611a8e133cb1601"
       define_method(:install) do
         bin.install "asn"
       end
